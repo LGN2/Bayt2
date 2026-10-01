@@ -38,3 +38,4 @@ app:
     key: ${AI_API_KEY:}
     model: ${AI_MODEL:gpt-4.1-mini}
     timeout-seconds: 12
+    required: true
