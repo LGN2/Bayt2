@@ -1,4 +1,4 @@
-package com.codevictims.propertymanagement;
+package com.codevictims.bayt;
 
 import java.time.Clock;
 import java.time.ZoneId;
@@ -9,9 +9,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class PropertyManagementApplication {
+public class BaytApplication {
   public static void main(String[] args) {
-    SpringApplication.run(PropertyManagementApplication.class, args);
+    SpringApplication.run(BaytApplication.class, args);
   }
 
   @Bean
