@@ -50,7 +50,7 @@ public class MaintenanceAiClient {
     if (response == null || !(response.get("choices") instanceof List<?> choices) || choices.isEmpty()) {
       throw new IllegalStateException("AI provider returned an empty response");
     }
-    Object first = choices.getFirst();
+    Object first = choices.get(0);
     if (!(first instanceof Map<?, ?> choice) || !(choice.get("message") instanceof Map<?, ?> message)) {
       throw new IllegalStateException("AI provider returned an invalid response");
     }
